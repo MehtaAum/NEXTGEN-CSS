@@ -1,0 +1,715 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(23,22,27);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar .navleft{
+    width: 35%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navleft .logo{
+    background-image: url(./asset/logo.svg);
+    background-size: cover;
+    width: 37px;
+    height: 25PX;
+    
+} 
+.navbar .navleft .linelogo{
+    width: 2px;
+    height: 30px;
+    background-color: rgb(56,55,59);
+
+}
+.navbar .navleft .logotext{
+    background-image: url(./asset/logo\ text.svg);
+    background-size: cover;
+    width: 120px;
+    height: 17px;
+    cursor: pointer;
+} 
+
+.navbar .navleft a{
+    text-decoration: none;
+    color: rgb(154,155,158);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar .navleft a:hover{
+    color: white;
+}
+.navbar .navleft a i{
+    font-size: 23px;
+  
+}
+.navbar .navleft #dropdown::before{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-color: rgb(255,79,94);
+    border-radius: 1px;
+    position: absolute;
+    top: 38px;
+    transition: 0.1s;
+  
+}
+
+.navbar .navleft #dropdown:hover::before{
+    width: 100%;
+}
+
+.navbar .navleft a::before{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-color: rgb(255,79,94);
+    border-radius: 1px;
+    position: absolute;
+    top: 35px;
+    transition: 0.1s;
+}
+
+.navbar .navleft a:hover::before{
+    width: 100%;
+}
+
+      /* navright */
+
+.navbar .navright{
+    width: 12%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navright i{
+      font-size: 20px;
+      color: rgb(154,155,158);
+      transition: 0.1s;
+      cursor: pointer;
+      position: relative;
+}
+
+.navbar .navright i:hover{
+    color: white;
+}
+
+.underline::before{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-color: rgb(255,79,94);
+    border-radius: 1px;
+    position: absolute;
+    top: 55px;
+    transition: 0.1s;
+}
+
+.underline:hover::before{
+    width: 25px;
+}
+
+.navbar .navright button{
+    width: 134px;
+    height: 40px;
+    background-color: rgb(242,243,245);
+    border: none;
+    color: rgb(255,79,94);
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    cursor: pointer;
+    clip-path: polygon(10% 0%, 100% 0, 100% 20%, 100% 70%, 90% 100%, 20% 100%, 0 100%, 0 30%);
+  
+}
+
+.navbar .navright button:hover{
+    background-color:rgb(255,79,94) ;
+    color:rgb(242,243,245) ;
+}
+
+/* navbar */
+
+/* heropage */
+.hero{
+    width: 100%;
+    height: 828px;
+    display: flex;
+    position: relative;
+    top: 60px; 
+    background-color: rgb(242,243,245);
+}
+
+.hero .heroleft{
+    width: 50%;
+    height:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.hero .heroleft .subheroleft{
+    width: 590px;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.hero .heroleft .subheroleft .heroone{
+    width: 177px;
+    height: 26px;
+    background-color: #FF4F5E;
+    color: white;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+   
+}
+
+
+.hero .heroleft .subheroleft h1{
+    font-size: 46px;
+    font-weight: 800;
+
+    
+}
+.hero .heroleft .subheroleft p{
+    font-size: 20px;
+    font-weight: 400;
+    color:  rgb(23,22,27);
+    letter-spacing: 1px;
+}
+
+.hero .heroleft .subheroleft .herotwo{
+    background-color:#FF4F5E;
+    height: 65px;
+    width: 285px;
+    color: rgb(242,239,241);
+    border: none;
+    clip-path: polygon(5% 0%, 100% 0, 100% 20%, 100% 75%, 95% 100%, 20% 100%, 0 100%, 0 30%);
+    transition: 0.5s;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 600;
+  
+}
+
+.hero .heroleft .subheroleft .herotwo:hover{
+  background-color: rgb(23,22,27);
+  color: #FF4F5E;
+}
+     /* HERORIGHT */
+
+.hero .heroright{
+    width: 50%;
+    height:inherit;
+
+}
+
+.hero .heroright .subheroright{
+    width: 627px;
+    height: 908px;
+    background-image: url(./asset/heropage.png);
+    background-size: cover;
+    margin-top: -60px;
+    display: flex;
+    margin-left: 30px; 
+}
+
+/* heropage */
+
+/* div2 */
+
+.divsecond{
+    width: 100%;
+    height: 1127px;
+    background-color: rgb(23,22,27);
+    color: rgb(242,243,245);
+    padding-inline: 370px;
+    margin-top: -40px;
+}
+
+.divsecond .infodivsec{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-top: 100px;
+
+}
+
+.divsecond .infodivsec h1{
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.divsecond .infodivsec p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(154,155,158);
+    letter-spacing: 1px;
+    line-height: 27px;
+   
+}
+.divsecond .infodivsec h3{
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.divsecond .infosec{
+     width: 100%;
+     height: 650px;
+     display: flex;
+     flex-wrap:wrap ;
+     justify-content: space-between;
+}
+
+.divsecond .infosec .infoblock{
+    width: 373px;
+    height: 218px;
+    background-color: rgb(30,31,35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divsecond .infosec .infoblock h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: rgb(255, 79, 94);
+}
+.divsecond .infosec .infoblock p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(154,155,158);
+}
+
+.divsecond .infosec .infoblock2{
+    width: 100%;
+    height: 146px;
+    background-color: rgb(30,31,35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divsecond .infosec .infoblock2 P{
+    font-size: 22PX;
+    font-weight: 700;
+    color: rgb(255, 79, 94);
+
+}
+/* div2 */
+
+/* div3 */
+
+.divthird{
+    width: 100%;
+    height: 6400px;
+    background-color: rgb(230,231,233);
+    border: 1px solid black;
+    padding-inline: 370px;
+   
+}
+
+.divthird .heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.divthird .heading h1{
+    font-size: 46px;
+    color: #17161B;
+    font-weight: 700;
+}
+
+.divthird .allgames{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divthird .allgames .gameboard{
+    width: 275px;
+    height: 358px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    border: 1px solid white;
+    color: rgb(23,22,27);
+}
+
+.divthird .allgames .gameboard:hover{
+    border: 0.5px solid black;
+    cursor: pointer;
+    color: #FF4F5E;
+}
+
+.divthird .allgames .gameboard .subboard{
+    width: 253px;
+    height: 253px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+   
+}
+
+.divthird .allgames .gameboard .subboard img{
+    width: 253px;
+    height: 253px;
+    object-fit: cover;
+}
+.divthird .allgames .gameboard h1{
+    font-size: 22px;
+    font-weight: 400;
+    font-weight: 700;
+    display: flex;   
+}
+
+.divthird .pinkbox{
+    width: 100%;
+    height: 491px;
+    background-color: #FF4F5E;
+    margin-top: 250px;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+}
+
+.divthird .pinkbox .pinkleft{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+
+}
+
+.divthird .pinkbox .pinkleft .subpinkleft{
+    height: 270px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divthird .pinkbox .pinkleft .subpinkleft h1{
+    color: white;
+    font-size: 34px;
+    font-weight: 700;
+}
+.divthird .pinkbox .pinkleft .subpinkleft p{
+    font-size: 18px;
+    color:  rgb(247,178,185);
+    font-weight: 400;
+}
+
+.divthird .pinkbox .pinkleft .subpinkleft .whitebtn{
+    width: 161px;
+    height: 52px;
+    background-color: rgb(242,243,245);
+    cursor: pointer;
+        clip-path: polygon(10% 0%, 100% 0, 100% 20%, 100% 70%, 90% 100%, 20% 100%, 0 100%, 0 30%);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(23,22,27);
+    margin-top: 20px; 
+    transition: 0.4s;
+}
+
+.divthird .pinkbox .pinkleft .subpinkleft .whitebtn:hover{
+    background-color: rgb(23,22,27);
+    color:rgb(242,243,245) ;
+}
+.divthird .pinkbox .pinkleft .subpinkleft .blackbtn:hover{
+    color: rgb(23,22,27);
+    background-color:rgb(242,243,245) ;
+}
+.divthird .pinkbox .pinkleft .subpinkleft .blackbtn{
+    width: 161px;
+    height: 52px;
+    background-color: rgb(23,22,27);
+    color:rgb(242,243,245);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.4s;
+    margin-left: 5px;
+    cursor: pointer;
+        clip-path: polygon(10% 0%, 100% 0, 100% 20%, 100% 70%, 90% 100%, 20% 100%, 0 100%, 0 30%);
+    
+}
+
+
+
+        /* pinkright */
+.divthird .pinkbox .pinkright{
+    width: 40%;
+    height: inherit;
+}
+
+.divthird .pinkbox .pinkright .subpinkright{
+    width: 422px;
+    height: 502px;    
+    background-image: url(./asset/heropage.png);
+    background-size: cover; 
+    position: absolute;
+    bottom: 1px;
+}
+
+
+.divthird .allgames2{
+    width: 100%;
+    height: 730px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divthird .allgames2 .gameboard2{
+    width: 275px;
+    height: 358px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    border: 1px solid white;
+    color: rgb(23,22,27);
+}
+
+.divthird .allgames2 .gameboard2:hover{
+    border: 0.5px solid black;
+    cursor: pointer;
+    color: #FF4F5E;
+}
+
+.divthird .allgames2 .gameboard2 .subboard2{
+    width: 253px;
+    height: 253px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+   
+}
+
+.divthird .allgames2 .gameboard2 .subboard2 img{
+    width: 253px;
+    height: 253px;
+    object-fit: cover;
+}
+.divthird .allgames2 .gameboard2 h1{
+    font-size: 22px;
+    font-weight: 400;
+    font-weight: 700;
+    display: flex;   
+}
+
+.divthird .gamenone{
+    width: 275px;
+    height: 358px;
+   
+}
+
+      /* buy now pages */
+
+      .gameboard4{
+        width: 275px;
+      }
+
+      .divthird .allgames3{
+        width: 74.6%;
+        height: 380px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .divthird .allgames3 .gameboard3{
+        width: 275px;
+        height: 358px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        border: 1px solid white;
+        color: rgb(23,22,27);
+    }
+    
+    .divthird .allgames3 .gameboard3:hover{
+        border: 0.5px solid black;
+        cursor: pointer;
+        color: #FF4F5E;
+    }
+    
+    .divthird .allgames3 .gameboard3 .subboard3{
+        width: 253px;
+        height: 253px;
+        margin-top: 10px;
+        margin-bottom: 17px;
+       
+    }
+    
+    .divthird .allgames3 .gameboard3 .subboard3 img{
+        width: 253px;
+        height: 253px;
+        object-fit: cover;
+    }
+    .divthird .allgames3 .gameboard3 h1{
+        font-size: 22px;
+        font-weight: 400;
+        font-weight: 700;
+        display: flex;   
+    }
+    
+/* div3 */
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 428px;
+    background-color: rgb(23,22,27);
+    padding-inline: 370px;
+}
+.footer .footmain{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.footer .footicon{
+    width: 75%;
+    height: 75px;
+    background-image: url(./asset/footer.png);
+    background-size: cover;
+}
+
+.footer .parental{
+    width: 200px;
+    height: 100px;
+}
+
+.footer p{
+    color: rgb(154,155,158);
+    display: flex;
+    
+}
+
+.footer .footerone{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+.footer .footlast{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-top: 90px;
+    border-top: 1px solid #3f3f3f;
+}
+
+.footer .footleft{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footleft img{
+    width: 37px;
+    height: 25px;
+}
+
+.footer .footleft a{
+    text-decoration: none;
+    color: rgb(154,155,158);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1s;
+    transition: 0.3s;
+}
+
+.footer .footleft a:hover{
+    color: white;
+    transform: rotate(2deg);
+}
+
+
+.footer .footright{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer .footright img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer .footright img:hover{
+    transform: scale(1.5);
+  
+    
+}
+
+
+
+/* footer */
